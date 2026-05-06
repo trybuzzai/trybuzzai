@@ -61,9 +61,11 @@ export default function App() {
 
       {/* Hero */}
       <section className="hero">
-        <div className="pollen pollen-1" />
-        <div className="pollen pollen-2" />
-        <div className="pollen pollen-3" />
+        <div className="pollen-bg">
+          <div className="pollen pollen-1" />
+          <div className="pollen pollen-2" />
+          <div className="pollen pollen-3" />
+        </div>
 
         <div className="hero-badge">
           <span className="badge-dot" />

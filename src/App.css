@@ -128,10 +128,16 @@
   align-items: center;
   text-align: center;
   padding: 140px 24px 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* decorative pollen blobs */
+.pollen-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
 .pollen {
   position: absolute;
   border-radius: 50%;
