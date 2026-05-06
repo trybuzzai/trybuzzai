@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 
 const features = [
@@ -37,10 +38,18 @@ const testimonials = [
 ]
 
 export default function App() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <div className="page">
       {/* Nav */}
-      <nav className="nav">
+      <nav className={`nav${scrolled ? ' nav--island' : ''}`}>
         <div className="nav-logo">
           <span className="bee-icon">🐝</span>
           <span className="nav-wordmark">buzz</span>
