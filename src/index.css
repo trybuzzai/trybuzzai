@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  font-size: 17px;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
