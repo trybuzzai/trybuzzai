@@ -73,14 +73,14 @@ export default function App() {
         </div>
 
         <h1 className="hero-headline">
-          Smart notifications
+          Smart Notifications
           <br />
-          <em>for the work that matters.</em>
+          <em>For the Work that Matters.</em>
         </h1>
 
         <p className="hero-sub">
-          Buzz delivers intelligent, timely nudges for your most important tasks
-          — gently, like nature intended.
+          Buzz delivers intelligent, timely nudges for your most important tasks that need your attention
+          
         </p>
 
         <form

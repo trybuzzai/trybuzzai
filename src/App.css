@@ -59,13 +59,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 250px;
+  padding: 18px 300px;
   width: 100%;
-  background: rgba(255, 253, 245, 0.92);
+  background: transparent;
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border: 1px solid transparent;
-  border-bottom-color: var(--border);
   border-radius: 0;
   box-shadow: none;
   transition:
