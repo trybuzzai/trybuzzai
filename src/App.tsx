@@ -73,9 +73,9 @@ export default function App() {
         </div>
 
         <h1 className="hero-headline">
-          Notifications that
+          Smart notifications
           <br />
-          <em>actually help you.</em>
+          <em>for the work that matters.</em>
         </h1>
 
         <p className="hero-sub">
