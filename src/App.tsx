@@ -53,7 +53,7 @@ export default function App() {
       <nav className={`nav${scrolled ? ' nav--island' : ''}`}>
         <div className="nav-logo">
           <img src={buzzLogo} className="logo-img" alt="Buzz logo" />
-          <span className="nav-wordmark">Buzz</span>
+          <span className="nav-wordmark">buzz</span>
         </div>
         <a href="#waitlist" className="nav-cta">
           Join waitlist
@@ -184,7 +184,7 @@ export default function App() {
       {/* Footer */}
       <footer className="footer">
         <img src={buzzLogo} className="logo-img" alt="" />
-        <span className="nav-wordmark">Buzz</span>
+        <span className="nav-wordmark">buzz</span>
         <span className="footer-sep">·</span>
         <span>© 2026</span>
       </footer>
