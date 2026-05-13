@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 300px;
+  padding: 10px 300px;
   width: 100%;
   background: transparent;
   backdrop-filter: blur(0px);
@@ -94,14 +94,14 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-wordmark {
   font-size: var(--font-size-2xl);
   font-weight: 700;
   letter-spacing: -0.5px;
-  color: var(--text-head);
+  color: var(--honey);
 }
 
 .nav-cta {
@@ -119,13 +119,15 @@
   transform: translateY(-1px);
 }
 
-/* ── Bee icon sizes ─────────────────────────────────────────── */
-.bee-icon {
-  font-size: 22px;
-  line-height: 1;
+/* ── Logo image sizes ───────────────────────────────────────── */
+.logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 10px;
 }
-.bee-icon.small  { font-size: 15px; }
-.bee-icon.large  { font-size: 52px; display: block; margin-bottom: 12px; }
+.logo-img.small  { width: 24px; height: 24px; }
+.logo-img.large  { width: 88px; height: 88px; display: block; margin-bottom: 12px; border-radius: 18px; }
 
 /* ── Hero ───────────────────────────────────────────────────── */
 .hero {

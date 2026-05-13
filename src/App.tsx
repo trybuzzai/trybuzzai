@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import buzzLogo from './assets/buzz-logo.svg'
 import './App.css'
 
 const features = [
@@ -51,7 +52,7 @@ export default function App() {
       {/* Nav */}
       <nav className={`nav${scrolled ? ' nav--island' : ''}`}>
         <div className="nav-logo">
-          <span className="bee-icon">🐝</span>
+          <img src={buzzLogo} className="logo-img" alt="Buzz logo" />
           <span className="nav-wordmark">Buzz</span>
         </div>
         <a href="#waitlist" className="nav-cta">
@@ -104,7 +105,7 @@ export default function App() {
         {/* Mock notification card */}
         <div className="mock-card">
           <div className="mock-card-header">
-            <span className="bee-icon small">🐝</span>
+            <img src={buzzLogo} className="logo-img small" alt="" />
             <span className="mock-card-app">buzz</span>
             <span className="mock-card-time">just now</span>
           </div>
@@ -164,7 +165,7 @@ export default function App() {
 
       {/* CTA */}
       <section className="cta-section">
-        <span className="bee-icon large">🐝</span>
+        <img src={buzzLogo} className="logo-img large" alt="" />
         <h2>Ready to find your flow?</h2>
         <p>Join hundreds of people already on the waitlist.</p>
         <form className="waitlist-form" onSubmit={(e) => e.preventDefault()}>
@@ -182,7 +183,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <span className="bee-icon">🐝</span>
+        <img src={buzzLogo} className="logo-img" alt="" />
         <span className="nav-wordmark">Buzz</span>
         <span className="footer-sep">·</span>
         <span>© 2026</span>
