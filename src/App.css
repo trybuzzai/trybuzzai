@@ -61,9 +61,9 @@
   justify-content: space-between;
   padding: 10px 300px;
   width: 100%;
-  background: transparent;
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
+  background: rgba(255, 253, 245, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid transparent;
   border-radius: 0;
   box-shadow: none;
