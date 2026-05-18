@@ -345,7 +345,7 @@
   font-weight: 800;
   letter-spacing: -0.8px;
   color: var(--text-head);
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .section-sub {
   font-size: var(--font-size-xl);
@@ -456,6 +456,7 @@
   font-weight: 800;
   letter-spacing: -1px;
   color: var(--text-head);
+  margin-bottom: 24px;
 }
 .cta-section p {
   font-size: var(--font-size-xl);
