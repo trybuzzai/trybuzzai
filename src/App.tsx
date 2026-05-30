@@ -4,37 +4,37 @@ import './App.css'
 
 const features = [
   {
-    icon: '🌿',
-    title: 'Smart Buzzes',
-    desc: 'Buzz learns what matters to you and surfaces the right tasks at the right moment — no noise, just signal.',
+    icon: '🔔',
+    title: 'Approval Alerts',
+    desc: 'The moment your agent pauses waiting for a decision, Buzz pings you — no more checking back every few minutes.',
   },
   {
-    icon: '🍯',
-    title: 'Hive Dashboard',
-    desc: 'All your notifications collected in one calm, organized view. Your hive, your rules.',
+    icon: '⚡',
+    title: 'Failure & Retry Detection',
+    desc: 'Long-running tasks fail silently. Buzz catches errors, retries, and crashes the second they happen.',
   },
   {
-    icon: '🌸',
-    title: 'Natural Timing',
-    desc: "Reminders that arrive when they're useful — not when they're annoying. We call it nature's rhythm.",
+    icon: '🖥️',
+    title: 'Works with Your Stack',
+    desc: 'Claude Code, Cursor agents, OpenAI Codex, and any terminal process. If it runs, Buzz can watch it.',
   },
 ]
 
 const testimonials = [
   {
-    quote: "Buzz is the only notification app I don't want to mute.",
-    name: 'Maya L.',
-    role: 'Product Designer',
+    quote: "I used to check my terminal every 5 minutes. Now Buzz just tells me when Claude Code needs me.",
+    name: 'Alex T.',
+    role: 'Staff Engineer',
   },
   {
-    quote: 'Finally, focus without missing what actually matters.',
-    name: 'Daniel R.',
+    quote: 'My Cursor agents run overnight. Buzz wakes me up if something needs approval or breaks.',
+    name: 'Jordan K.',
     role: 'Indie Hacker',
   },
   {
-    quote: 'It feels like having a very calm, very smart assistant.',
-    name: 'Priya M.',
-    role: 'Engineer',
+    quote: "Finally stopped babysitting Codex. Buzz handles the watching, I handle the decisions.",
+    name: 'Sam R.',
+    role: 'Full-Stack Developer',
   },
 ]
 
@@ -70,18 +70,17 @@ export default function App() {
 
         <div className="hero-badge">
           <span className="badge-dot" />
-          Now in early access
+          Claude Code · Codex · Terminal Agents
         </div>
 
         <h1 className="hero-headline">
-          Smart Notifications
+          Operational awareness
           <br />
-          <em>For the Work that Matters.</em>
+          <em>for agents.</em>
         </h1>
 
         <p className="hero-sub">
-          Buzz delivers intelligent, timely nudges for your most important tasks that need your attention
-          
+          Stop monitoring your terminal. Get alerted when your agent needs you.
         </p>
 
         <form
@@ -100,8 +99,6 @@ export default function App() {
           </button>
         </form>
 
-        <p className="hero-footnote">No spam. Unsubscribe any time.</p>
-
         {/* Mock notification card */}
         <div className="mock-card">
           <div className="mock-card-header">
@@ -109,13 +106,13 @@ export default function App() {
             <span className="mock-card-app">buzz</span>
             <span className="mock-card-time">just now</span>
           </div>
-          <p className="mock-card-title">Time to review your PRs</p>
+          <p className="mock-card-title">Claude Code needs your approval</p>
           <p className="mock-card-body">
-            3 pull requests need your attention before your 3pm stand-up.
+            Waiting to edit /src/auth/session.ts — blocked for 6 min.
           </p>
           <div className="mock-card-actions">
-            <button className="mock-action primary">Review now</button>
-            <button className="mock-action">Snooze 30 min</button>
+            <button className="mock-action primary">Approve</button>
+            <button className="mock-action">View diff</button>
           </div>
         </div>
       </section>
@@ -132,9 +129,9 @@ export default function App() {
 
       {/* Features */}
       <section className="features">
-        <h2 className="section-title">Why the hive loves Buzz</h2>
+        <h2 className="section-title">Stop babysitting your terminal</h2>
         <p className="section-sub">
-          Built around your focus, not against it.
+          Your agents keep running. You get notified when it matters.
         </p>
         <div className="feature-grid">
           {features.map((f) => (
@@ -149,7 +146,7 @@ export default function App() {
 
       {/* Testimonials */}
       <section className="testimonials">
-        <h2 className="section-title">From the hive</h2>
+        <h2 className="section-title">From developers in the wild</h2>
         <div className="testimonial-grid">
           {testimonials.map((t) => (
             <div className="testimonial-card" key={t.name}>
@@ -166,8 +163,8 @@ export default function App() {
       {/* CTA */}
       <section className="cta-section">
         <img src={buzzLogo} className="logo-img large" alt="" />
-        <h2>Ready to find your flow?</h2>
-        <p>Join hundreds of people already on the waitlist.</p>
+        <h2>Stop watching. Start shipping.</h2>
+        <p>Join developers already running agents hands-free.</p>
         <form className="waitlist-form" onSubmit={(e) => e.preventDefault()}>
           <input
             type="email"
