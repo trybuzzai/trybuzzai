@@ -70,7 +70,7 @@ export default function App() {
 
         <div className="hero-badge">
           <span className="badge-dot" />
-          Claude Code · Codex · Terminal Agents
+          Claude Code · Cursor · Codex · Terminal Agents
         </div>
 
         <h1 className="hero-headline">
